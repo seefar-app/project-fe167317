@@ -10,9 +10,9 @@
   "files": {
     "app.json": {
       "description": "json file",
-      "hash": "3f29b1824fdd962798b44a41ae3d8d6da2b1499d",
+      "hash": "ffddf229c56c32ebe3f24fbb86de7b5bb03fa636",
       "describedHash": "3f29b1824fdd962798b44a41ae3d8d6da2b1499d",
-      "analyzedHash": "3f29b1824fdd962798b44a41ae3d8d6da2b1499d",
+      "analyzedHash": "ffddf229c56c32ebe3f24fbb86de7b5bb03fa636",
       "source": "static",
       "exports": [],
       "imports": [],
@@ -911,6 +911,19 @@
       "labels": [],
       "route": null,
       "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    ".gitignore": {
+      "description": "asset file",
+      "hash": "c62b83b5c6b3802d3bddbc4c50cc3605d074f50f",
+      "describedHash": "c62b83b5c6b3802d3bddbc4c50cc3605d074f50f",
+      "analyzedHash": "c62b83b5c6b3802d3bddbc4c50cc3605d074f50f",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:22:34.249Z"
     }
   },
   "decisions": [],
@@ -991,6 +1004,14 @@
     {
       "summary": "Initial generation: project-fe167317 — create a food deliviry app : special healthy food in algeria, connect the healthy food with resturan",
       "timestamp": "2026-10-11T16:20:05.146Z"
+    },
+    {
+      "summary": "Pinned sdkVersion 54.0.0 in app.json to match Expo Go SDK 54; package.json already aligned to SDK 54.",
+      "timestamp": "2026-10-11T16:22:48.485Z"
+    },
+    {
+      "summary": "Fix this runtime error:\n[container] runtime: ERROR  Project is incompatible with… → 1 files written, 3 reasoning rounds",
+      "timestamp": "2026-10-11T16:22:51.382Z"
     }
   ],
   "turns": [],
@@ -999,7 +1020,7 @@
   "clarifications": [],
   "metadata": {
     "createdAt": "2026-10-11T16:20:05.145Z",
-    "lastUpdated": "2026-10-11T16:20:17.012Z",
+    "lastUpdated": "2026-10-11T16:22:51.407Z",
     "projectName": "project-fe167317",
     "platform": "react-native",
     "originalPrompt": "create a food deliviry app : special healthy food in algeria, connect the healthy food with resturant and women bake healthy food in hoses ",

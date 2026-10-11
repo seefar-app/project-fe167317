@@ -3,6 +3,7 @@
     "name": "Saha Kitchen",
     "slug": "project-fe167317",
     "version": "1.0.0",
+    "sdkVersion": "54.0.0",
     "orientation": "portrait",
     "scheme": "sahakitchen",
     "userInterfaceStyle": "automatic",
