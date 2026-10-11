@@ -1,0 +1,1008 @@
+{
+  "version": 2,
+  "architecture": {
+    "framework": "Expo (React Native)",
+    "sdkVersion": "~54.0.30",
+    "navigation": "tabs",
+    "styling": "NativeWind (Tailwind CSS)",
+    "stateManagement": "Zustand + React Query"
+  },
+  "files": {
+    "app.json": {
+      "description": "json file",
+      "hash": "3f29b1824fdd962798b44a41ae3d8d6da2b1499d",
+      "describedHash": "3f29b1824fdd962798b44a41ae3d8d6da2b1499d",
+      "analyzedHash": "3f29b1824fdd962798b44a41ae3d8d6da2b1499d",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:05.165Z"
+    },
+    "app/_layout.tsx": {
+      "description": "Root layout: initializes auth and store, enables RTL, and redirects users based on authentication state.",
+      "hash": "36e2cda518c2246b7ad56a9948597401d64f3a8a",
+      "describedHash": "36e2cda518c2246b7ad56a9948597401d64f3a8a",
+      "analyzedHash": "36e2cda518c2246b7ad56a9948597401d64f3a8a",
+      "source": "llm",
+      "exports": [
+        "RootLayout"
+      ],
+      "imports": [
+        "global.css"
+      ],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "app/(auth)/_layout.tsx": {
+      "description": "Stack layout for the authentication screens, hiding headers and setting the background color.",
+      "hash": "862c7081e98ece31b77efa96fb438a6203a044cd",
+      "describedHash": "862c7081e98ece31b77efa96fb438a6203a044cd",
+      "analyzedHash": "862c7081e98ece31b77efa96fb438a6203a044cd",
+      "source": "llm",
+      "exports": [
+        "AuthLayout"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "app/(auth)/login.tsx": {
+      "description": "Login screen with a phone-number OTP flow, guest access, and navigation to the tabs on success.",
+      "hash": "b3da01d884b6423fdf16663d27543b1eeb2d5198",
+      "describedHash": "b3da01d884b6423fdf16663d27543b1eeb2d5198",
+      "analyzedHash": "b3da01d884b6423fdf16663d27543b1eeb2d5198",
+      "source": "llm",
+      "exports": [
+        "Login"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Welcome",
+        "back",
+        "Phone number",
+        "555 12 34 56",
+        "SMS code",
+        "123456",
+        "New here?",
+        "Create an account"
+      ],
+      "route": "/login",
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "app/(auth)/signup.tsx": {
+      "description": "Signup screen collecting name, phone, and wilaya/commune, with the location picker and form validation.",
+      "hash": "8130579c7cceca97df40abc3df5d34b56f2b6251",
+      "describedHash": "8130579c7cceca97df40abc3df5d34b56f2b6251",
+      "analyzedHash": "8130579c7cceca97df40abc3df5d34b56f2b6251",
+      "source": "llm",
+      "exports": [
+        "Signup"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Join Saha",
+        "Kitchen",
+        "Healthy, halal meals from verified kitchens near you.",
+        "Full name",
+        "Amine Bouzid",
+        "Phone number",
+        "555 12 34 56",
+        "Wilaya",
+        "Commune (optional)",
+        "Bab Ezzouar",
+        "Create account",
+        "Already have an account?"
+      ],
+      "route": "/signup",
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "app/(tabs)/_layout.tsx": {
+      "description": "Bottom tab layout with a custom tab bar, icons, and a cart badge.",
+      "hash": "6843bf3236e2f521ea08ab80bad5782afc9b5477",
+      "describedHash": "6843bf3236e2f521ea08ab80bad5782afc9b5477",
+      "analyzedHash": "6843bf3236e2f521ea08ab80bad5782afc9b5477",
+      "source": "llm",
+      "exports": [
+        "TabsLayout"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "app/(tabs)/cart.tsx": {
+      "description": "Cart screen for quantities, promo codes, payment method choice, delivery slots, and placing orders.",
+      "hash": "ac91b5ff9d62da23f107769d1aecfbe207caea29",
+      "describedHash": "ac91b5ff9d62da23f107769d1aecfbe207caea29",
+      "analyzedHash": "ac91b5ff9d62da23f107769d1aecfbe207caea29",
+      "source": "llm",
+      "exports": [
+        "CartScreen"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Your cart",
+        "Your cart is empty",
+        "delivery",
+        "Deliver to ·",
+        "Delivery time",
+        "Payment",
+        "Promo code",
+        "Apply",
+        "Subtotal",
+        "Delivery",
+        "Total"
+      ],
+      "route": "/cart",
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "app/(tabs)/index.tsx": {
+      "description": "Home screen listing kitchens and dishes with category filters, search, and add-to-cart actions.",
+      "hash": "5cf6c2e14551575f05d6538994ccd5c501449385",
+      "describedHash": "5cf6c2e14551575f05d6538994ccd5c501449385",
+      "analyzedHash": "5cf6c2e14551575f05d6538994ccd5c501449385",
+      "source": "llm",
+      "exports": [
+        "Home"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Clear filters",
+        "Couldn’t load dishes",
+        "No dishes match",
+        "No kitchens found",
+        "Become a partner kitchen"
+      ],
+      "route": "/",
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "app/(tabs)/orders.tsx": {
+      "description": "Orders screen splitting active and past orders, with refresh and reorder actions.",
+      "hash": "c717d344716f8465e1369af2972aabc48c8be16c",
+      "describedHash": "c717d344716f8465e1369af2972aabc48c8be16c",
+      "analyzedHash": "c717d344716f8465e1369af2972aabc48c8be16c",
+      "source": "llm",
+      "exports": [
+        "OrdersScreen"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Orders",
+        "Track",
+        "Reorder"
+      ],
+      "route": "/orders",
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "app/(tabs)/profile.tsx": {
+      "description": "Profile screen for user info, dietary goals, notification toggles, language, addresses, and logout.",
+      "hash": "abbdc66d0231d163aa5afbe45a523c9b91cc8877",
+      "describedHash": "abbdc66d0231d163aa5afbe45a523c9b91cc8877",
+      "analyzedHash": "abbdc66d0231d163aa5afbe45a523c9b91cc8877",
+      "source": "llm",
+      "exports": [
+        "ProfileScreen"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Profile",
+        "Create a free account",
+        "My dietary goals",
+        "Cook with Saha Kitchen",
+        "Home cooks & restaurants — apply in minutes",
+        "Language",
+        "Saved addresses",
+        "Notifications",
+        "Order status updates",
+        "New kitchens nearby",
+        "Help center & FAQ",
+        "Privacy & data"
+      ],
+      "route": "/profile",
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "app/index.tsx": {
+      "description": "Splash screen with the hero headline, language selection, and entry into the app.",
+      "hash": "8330fa8c8192350307792ecd8fb97d6e707b4568",
+      "describedHash": "8330fa8c8192350307792ecd8fb97d6e707b4568",
+      "analyzedHash": "8330fa8c8192350307792ecd8fb97d6e707b4568",
+      "source": "llm",
+      "exports": [
+        "Splash"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "SAHA KITCHEN"
+      ],
+      "route": "/",
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "app/kitchen/[id].tsx": {
+      "description": "Kitchen detail screen showing dishes, schedule, favorites, customization, and nutrition info.",
+      "hash": "f4ad3b6246b03637a0b4f3506ab4cb06849efb6e",
+      "describedHash": "f4ad3b6246b03637a0b4f3506ab4cb06849efb6e",
+      "analyzedHash": "f4ad3b6246b03637a0b4f3506ab4cb06849efb6e",
+      "source": "llm",
+      "exports": [
+        "KitchenDetail"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Kitchen not found",
+        "ID & hygiene verified",
+        "Halal",
+        "reviews)",
+        "Our story",
+        "This kitchen is on a break and not accepting orders right n…",
+        "Weekly menu",
+        "Full menu",
+        "Menu",
+        "Nothing on the menu",
+        "g portion",
+        "Nutrition"
+      ],
+      "route": "/kitchen/[id]",
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "app/order/[id].tsx": {
+      "description": "Order tracking screen with a status timeline, map view, courier info, and contact actions.",
+      "hash": "0cba74333c5ccb367222f848809a47d3719ee63a",
+      "describedHash": "0cba74333c5ccb367222f848809a47d3719ee63a",
+      "analyzedHash": "0cba74333c5ccb367222f848809a47d3719ee63a",
+      "source": "llm",
+      "exports": [
+        "OrderTracking"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Order not found",
+        "Your address",
+        "Live",
+        "· Motorbike",
+        "Order progress",
+        "Summary",
+        "Delivery",
+        "Promo",
+        "Total",
+        "Report a problem",
+        "Back to orders"
+      ],
+      "route": "/order/[id]",
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "assets/adaptive-icon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:05.436Z"
+    },
+    "assets/favicon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:05.437Z"
+    },
+    "assets/icon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:05.438Z"
+    },
+    "assets/images/adaptive-icon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:05.438Z"
+    },
+    "assets/images/favicon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:05.439Z"
+    },
+    "assets/images/icon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:05.440Z"
+    },
+    "assets/images/splash-icon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:05.440Z"
+    },
+    "assets/splash-icon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:05.441Z"
+    },
+    "assets/splash.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:05.441Z"
+    },
+    "babel.config.js": {
+      "description": "Babel configuration enabling the Expo preset with NativeWind JSX support.",
+      "hash": "84cc377bb42d41e461e30d4d3e5ba61d81998813",
+      "describedHash": "84cc377bb42d41e461e30d4d3e5ba61d81998813",
+      "analyzedHash": "84cc377bb42d41e461e30d4d3e5ba61d81998813",
+      "source": "llm",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/motion/ParallaxHeader.tsx": {
+      "description": "Animation helpers: scroll-driven parallax header, fade-in view, and count-up number component.",
+      "hash": "b5e85c06795eea2f183b52744a1b7bd31d7cb329",
+      "describedHash": "b5e85c06795eea2f183b52744a1b7bd31d7cb329",
+      "analyzedHash": "b5e85c06795eea2f183b52744a1b7bd31d7cb329",
+      "source": "llm",
+      "exports": [
+        "useScrollY",
+        "ParallaxHeader",
+        "FadeInView",
+        "CountUp"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/shared/CartBadge.tsx": {
+      "description": "Small red badge showing the cart item count, hidden when empty.",
+      "hash": "9dd3b084b0f4855a2c615f73da46fa37436ab4df",
+      "describedHash": "9dd3b084b0f4855a2c615f73da46fa37436ab4df",
+      "analyzedHash": "9dd3b084b0f4855a2c615f73da46fa37436ab4df",
+      "source": "llm",
+      "exports": [
+        "CartBadge"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/shared/CategoryRow.tsx": {
+      "description": "Horizontal scrollable row of dietary goal category chips for filtering.",
+      "hash": "e4129b6fe5fcbb3223ccf918bdf8a43d1fd4c29b",
+      "describedHash": "e4129b6fe5fcbb3223ccf918bdf8a43d1fd4c29b",
+      "analyzedHash": "e4129b6fe5fcbb3223ccf918bdf8a43d1fd4c29b",
+      "source": "llm",
+      "exports": [
+        "CategoryRow"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/shared/DishCard.tsx": {
+      "description": "Card component showing a dish's photo, calories, name, kitchen, price, and add button.",
+      "hash": "c4542e0aeb297262321a8a18a715cd55d9d2d837",
+      "describedHash": "c4542e0aeb297262321a8a18a715cd55d9d2d837",
+      "analyzedHash": "c4542e0aeb297262321a8a18a715cd55d9d2d837",
+      "source": "llm",
+      "exports": [
+        "DishCard"
+      ],
+      "imports": [
+        "components/shared/PriceAddButton"
+      ],
+      "tables": [],
+      "labels": [
+        "kcal"
+      ],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/shared/KitchenCard.tsx": {
+      "description": "Card showing a kitchen's cover, type badge, favorite toggle, and closed-state overlay.",
+      "hash": "ea7e3a5a9a71292622de90644ff94bfc878eac1b",
+      "describedHash": "ea7e3a5a9a71292622de90644ff94bfc878eac1b",
+      "analyzedHash": "ea7e3a5a9a71292622de90644ff94bfc878eac1b",
+      "source": "llm",
+      "exports": [
+        "KitchenCard"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "On a break · back soon",
+        "min",
+        "km"
+      ],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/shared/LocationPicker.tsx": {
+      "description": "Bottom sheet listing wilayas for the user to select their delivery location.",
+      "hash": "16bca8c901e8978eea6862698d528a541b91c595",
+      "describedHash": "16bca8c901e8978eea6862698d528a541b91c595",
+      "analyzedHash": "16bca8c901e8978eea6862698d528a541b91c595",
+      "source": "llm",
+      "exports": [
+        "LocationPicker"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Choose your wilaya"
+      ],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/shared/NutritionPanel.tsx": {
+      "description": "Panel displaying a dish's calories and protein, carbs, and fat bars per portion.",
+      "hash": "9f596346b6c00ca6e31d21dc73fac3b5b05d77d5",
+      "describedHash": "9f596346b6c00ca6e31d21dc73fac3b5b05d77d5",
+      "analyzedHash": "9f596346b6c00ca6e31d21dc73fac3b5b05d77d5",
+      "source": "llm",
+      "exports": [
+        "NutritionPanel"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Per portion",
+        "kcal",
+        "Fiber",
+        "g · Sugar"
+      ],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/shared/PriceAddButton.tsx": {
+      "description": "Price label with a round add-to-cart button that disables itself when unavailable.",
+      "hash": "918e629d683ca8a86f735bd860c98e2eb0b6633c",
+      "describedHash": "918e629d683ca8a86f735bd860c98e2eb0b6633c",
+      "analyzedHash": "918e629d683ca8a86f735bd860c98e2eb0b6633c",
+      "source": "llm",
+      "exports": [
+        "PriceAddButton"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/shared/RewardsStrip.tsx": {
+      "description": "Tappable banner promoting promo codes and rewards, shown on the home screen.",
+      "hash": "925d0cde4e4b9465909f3284d49a30359c17c1ff",
+      "describedHash": "925d0cde4e4b9465909f3284d49a30359c17c1ff",
+      "analyzedHash": "925d0cde4e4b9465909f3284d49a30359c17c1ff",
+      "source": "llm",
+      "exports": [
+        "RewardsStrip"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Use code SAHA10 — 10% off",
+        "Your first healthy week, on us. Try FIRST20 for 20%."
+      ],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/shared/StatusIndicator.tsx": {
+      "description": "Animated pulsing dot used to show a live or online status.",
+      "hash": "8a9715771433e922ddc95b6f95b9ef9932ed1ab1",
+      "describedHash": "8a9715771433e922ddc95b6f95b9ef9932ed1ab1",
+      "analyzedHash": "8a9715771433e922ddc95b6f95b9ef9932ed1ab1",
+      "source": "llm",
+      "exports": [
+        "StatusIndicator"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/shared/TrustChips.tsx": {
+      "description": "Horizontal scrollable row of trust badges such as halal and hygiene verified.",
+      "hash": "e825e10f953116a02ed8ee13ed6d6a475763dbdb",
+      "describedHash": "e825e10f953116a02ed8ee13ed6d6a475763dbdb",
+      "analyzedHash": "e825e10f953116a02ed8ee13ed6d6a475763dbdb",
+      "source": "llm",
+      "exports": [
+        "TrustChips"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/ui/Badge.tsx": {
+      "description": "Small colored pill label with optional icon and tone variants.",
+      "hash": "3c90b84d436587e7cc34eca6d524ee12f4adc621",
+      "describedHash": "3c90b84d436587e7cc34eca6d524ee12f4adc621",
+      "analyzedHash": "3c90b84d436587e7cc34eca6d524ee12f4adc621",
+      "source": "llm",
+      "exports": [
+        "Badge"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/ui/BottomSheet.tsx": {
+      "description": "Animated modal bottom sheet with a title, backdrop dismissal, and safe-area padding.",
+      "hash": "17d3c318a8a8a06e4f5902f80933c97489989b2e",
+      "describedHash": "17d3c318a8a8a06e4f5902f80933c97489989b2e",
+      "analyzedHash": "17d3c318a8a8a06e4f5902f80933c97489989b2e",
+      "source": "llm",
+      "exports": [
+        "BottomSheet"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/ui/Button.tsx": {
+      "description": "Themed pressable pill button with variants, sizes, icon, and loading state.",
+      "hash": "95d14755f1fec03d32ae1867fa035e9a0ae3d5cf",
+      "describedHash": "95d14755f1fec03d32ae1867fa035e9a0ae3d5cf",
+      "analyzedHash": "95d14755f1fec03d32ae1867fa035e9a0ae3d5cf",
+      "source": "llm",
+      "exports": [
+        "Button"
+      ],
+      "imports": [
+        "components/ui/PressableScale"
+      ],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/ui/Card.tsx": {
+      "description": "White rounded card container that optionally becomes pressable.",
+      "hash": "060bf1971e2cbf1c223a67044a4552a132872126",
+      "describedHash": "060bf1971e2cbf1c223a67044a4552a132872126",
+      "analyzedHash": "060bf1971e2cbf1c223a67044a4552a132872126",
+      "source": "llm",
+      "exports": [
+        "Card"
+      ],
+      "imports": [
+        "components/ui/PressableScale"
+      ],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/ui/EmptyState.tsx": {
+      "description": "Centered placeholder with icon, title, description, and optional action button.",
+      "hash": "4e483ba2b86923dcf1f8125a007d2e14f126deea",
+      "describedHash": "4e483ba2b86923dcf1f8125a007d2e14f126deea",
+      "analyzedHash": "4e483ba2b86923dcf1f8125a007d2e14f126deea",
+      "source": "llm",
+      "exports": [
+        "EmptyState"
+      ],
+      "imports": [
+        "components/ui/Button"
+      ],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/ui/Input.tsx": {
+      "description": "Labeled text input with icon, prefix, error display, and password visibility toggle.",
+      "hash": "9ce16e866bea9fff194f07c473ac1fbc52321b86",
+      "describedHash": "9ce16e866bea9fff194f07c473ac1fbc52321b86",
+      "analyzedHash": "9ce16e866bea9fff194f07c473ac1fbc52321b86",
+      "source": "llm",
+      "exports": [
+        "Input"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/ui/PressableScale.tsx": {
+      "description": "Wrapper that scales its child down on press and optionally triggers haptics.",
+      "hash": "3fc3c4ae056b5cfbbed0a8edf6260dcd9df7a3d4",
+      "describedHash": "3fc3c4ae056b5cfbbed0a8edf6260dcd9df7a3d4",
+      "analyzedHash": "3fc3c4ae056b5cfbbed0a8edf6260dcd9df7a3d4",
+      "source": "llm",
+      "exports": [
+        "PressableScale"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "components/ui/Skeleton.tsx": {
+      "description": "Pulsing gray placeholder block shown while content loads.",
+      "hash": "b8b2f7e8548696dfd1ccfa24a744db290c5bc909",
+      "describedHash": "b8b2f7e8548696dfd1ccfa24a744db290c5bc909",
+      "analyzedHash": "b8b2f7e8548696dfd1ccfa24a744db290c5bc909",
+      "source": "llm",
+      "exports": [
+        "Skeleton"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "constants/Colors.ts": {
+      "description": "Light and dark theme color palettes, orange shade scale, and page padding constant.",
+      "hash": "4a28310b8f6c04db25f300dd40ea820bb3fd3315",
+      "describedHash": "4a28310b8f6c04db25f300dd40ea820bb3fd3315",
+      "analyzedHash": "4a28310b8f6c04db25f300dd40ea820bb3fd3315",
+      "source": "llm",
+      "exports": [
+        "Colors",
+        "shade",
+        "PAGE_PADDING"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "constants/i18n.ts": {
+      "description": "Translation dictionary with English, French, and Arabic strings plus a lookup helper.",
+      "hash": "3b457d0667c34a305005768ddcd6141d63f9ed85",
+      "describedHash": "3b457d0667c34a305005768ddcd6141d63f9ed85",
+      "analyzedHash": "3b457d0667c34a305005768ddcd6141d63f9ed85",
+      "source": "llm",
+      "exports": [
+        "dict",
+        "t",
+        "isRTL"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "expo-env.d.ts": {
+      "description": "Auto-generated Expo type reference file; do not edit.",
+      "hash": "d4f8cc7190acbb0ccbd997ce4eed555f3fa381e6",
+      "describedHash": "d4f8cc7190acbb0ccbd997ce4eed555f3fa381e6",
+      "analyzedHash": "d4f8cc7190acbb0ccbd997ce4eed555f3fa381e6",
+      "source": "llm",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "metro.config.js": {
+      "description": "Metro bundler configuration that wraps the default config with NativeWind.",
+      "hash": "79418d9e6401030ba111477e58f6dec01a0e34d5",
+      "describedHash": "79418d9e6401030ba111477e58f6dec01a0e34d5",
+      "analyzedHash": "79418d9e6401030ba111477e58f6dec01a0e34d5",
+      "source": "llm",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "nativewind-env.d.ts": {
+      "description": "Type reference file that enables NativeWind className typings; not meant for edits.",
+      "hash": "7fa30f1e7dba7a511733f923c59379ffa08ef606",
+      "describedHash": "7fa30f1e7dba7a511733f923c59379ffa08ef606",
+      "analyzedHash": "7fa30f1e7dba7a511733f923c59379ffa08ef606",
+      "source": "llm",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "package.json": {
+      "description": "json file",
+      "hash": "b6adbd904115a5fe3bfa2f13809274ee436c0344",
+      "describedHash": "b6adbd904115a5fe3bfa2f13809274ee436c0344",
+      "analyzedHash": "b6adbd904115a5fe3bfa2f13809274ee436c0344",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:05.517Z"
+    },
+    "services/mockData.ts": {
+      "description": "Mock seed data for wilayas, goals, kitchens, dishes, orders, promos, and delivery slots.",
+      "hash": "ebfcb68543eadf1a130322a3043bac2ae106b620",
+      "describedHash": "ebfcb68543eadf1a130322a3043bac2ae106b620",
+      "analyzedHash": "ebfcb68543eadf1a130322a3043bac2ae106b620",
+      "source": "llm",
+      "exports": [
+        "WILAYAS",
+        "GOALS",
+        "KITCHENS",
+        "DISHES",
+        "DEFAULT_ADDRESS",
+        "COURIER",
+        "SEED_ORDERS",
+        "PROMOS",
+        "DELIVERY_SLOTS",
+        "HERO_IMAGE",
+        "SPLASH_IMAGE"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "store/useAuthStore.ts": {
+      "description": "Zustand store handling phone OTP login, signup, guest mode, and persisted user session.",
+      "hash": "e7d09c0dd74aa2d693b2d8d3f9319df426ba2df0",
+      "describedHash": "e7d09c0dd74aa2d693b2d8d3f9319df426ba2df0",
+      "analyzedHash": "e7d09c0dd74aa2d693b2d8d3f9319df426ba2df0",
+      "source": "llm",
+      "exports": [
+        "useAuthStore"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "store/useStore.ts": {
+      "description": "Zustand store managing language, catalog, cart, promos, favorites, orders, and order simulation.",
+      "hash": "5b5aac27fd806cca9123fa34f04a6d810aaee65f",
+      "describedHash": "5b5aac27fd806cca9123fa34f04a6d810aaee65f",
+      "analyzedHash": "5b5aac27fd806cca9123fa34f04a6d810aaee65f",
+      "source": "llm",
+      "exports": [
+        "useStore",
+        "STATUS_FLOW",
+        "isActiveStatus",
+        "dz"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "tailwind.config.js": {
+      "description": "Tailwind/NativeWind styling config defining content paths, the NativeWind preset, and brand color tokens.",
+      "hash": "e7f05960a6a1aa9db1c7fd6823408571626bf6a7",
+      "describedHash": "e7f05960a6a1aa9db1c7fd6823408571626bf6a7",
+      "analyzedHash": "e7f05960a6a1aa9db1c7fd6823408571626bf6a7",
+      "source": "llm",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    },
+    "tsconfig.json": {
+      "description": "json file",
+      "hash": "17f61565a21eedcca6d12e9a666aae7ae7af0948",
+      "describedHash": "17f61565a21eedcca6d12e9a666aae7ae7af0948",
+      "analyzedHash": "17f61565a21eedcca6d12e9a666aae7ae7af0948",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:05.552Z"
+    },
+    "types/index.ts": {
+      "description": "Shared TypeScript types for the app's domain models: users, addresses, kitchens, nutrition, dishes, and order status.",
+      "hash": "0c17db2b36a061f2f0e5d51f310f18adf462e011",
+      "describedHash": "0c17db2b36a061f2f0e5d51f310f18adf462e011",
+      "analyzedHash": "0c17db2b36a061f2f0e5d51f310f18adf462e011",
+      "source": "llm",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-11T16:20:17.011Z"
+    }
+  },
+  "decisions": [],
+  "knownIssues": [],
+  "designTokens": {
+    "theme": "Photo Marketplace",
+    "style": "photo-marketplace",
+    "mood": "appetising, warm, commercial, browse-first",
+    "colors": {
+      "primary": "orange-700",
+      "secondary": "amber-100",
+      "accent": "red-600",
+      "background": "orange-50",
+      "primaryHex": "#c2410c",
+      "secondaryHex": "#fde8d7",
+      "accentHex": "#dc2626",
+      "backgroundHex": "#f7f1e8",
+      "textHex": "#1c1917",
+      "accentUsage": "one-accent",
+      "tileColors": []
+    },
+    "gradients": [
+      "#c2410c",
+      "#ea580c"
+    ],
+    "archetypeId": "photo-marketplace",
+    "family": "commerce",
+    "canvasMode": "light",
+    "secondaryScreens": {
+      "detail": "Product / item detail: a full-width photo (~40% height) with a back pill and heart over it, then a white sheet with title, price, rating, description, and a sticky bottom bar (quantity stepper + \"Add\" pill).",
+      "list": "Category / results lists are 2-column photo cards with a rounded image, bold title, price and a round primary add button.",
+      "form": "Checkout / address forms are stacked white cards on the cream canvas with a summary card and a sticky pay button.",
+      "onboarding": "Full-bleed appetising photo with a bottom gradient overlay, stacked uppercase headline, one primary pill."
+    },
+    "skeleton": [
+      "header-location-search",
+      "photo-hero-with-cta",
+      "category-icon-row",
+      "popular-cards-rail",
+      "rewards-or-trust-strip",
+      "docked-tabs-with-cart"
+    ],
+    "header": "location-search",
+    "hero": "photo-with-overlay",
+    "navigation": {
+      "style": "tabs-with-center-action",
+      "tabCount": 5,
+      "centerAction": "cart",
+      "labels": true
+    },
+    "surface": {
+      "canvas": "cream",
+      "canvasHex": "#f7f1e8",
+      "card": "bg-white rounded-2xl",
+      "cardHex": "#ffffff",
+      "radius": 20,
+      "shadow": "shadow-sm",
+      "border": "none",
+      "blur": false
+    },
+    "typography": {
+      "display": "text-3xl font-extrabold uppercase leading-tight",
+      "heading": "text-lg font-bold",
+      "body": "text-sm",
+      "label": "text-xs font-medium",
+      "fontStrategy": "system",
+      "notes": "Hero headline is stacked, all-caps, two or three short lines. Prices are bold and sit beside a round add button."
+    },
+    "imagery": "photo",
+    "avoid": [
+      "No KPI numbers or ring charts on the home screen.",
+      "No dark canvas.",
+      "No generic gradient header; the hero photo IS the header accent."
+    ]
+  },
+  "dependencies": {},
+  "conversationLog": [
+    {
+      "summary": "Initial generation: project-fe167317 — create a food deliviry app : special healthy food in algeria, connect the healthy food with resturan",
+      "timestamp": "2026-10-11T16:20:05.146Z"
+    }
+  ],
+  "turns": [],
+  "preferences": [],
+  "pendingClarification": null,
+  "clarifications": [],
+  "metadata": {
+    "createdAt": "2026-10-11T16:20:05.145Z",
+    "lastUpdated": "2026-10-11T16:20:17.012Z",
+    "projectName": "project-fe167317",
+    "platform": "react-native",
+    "originalPrompt": "create a food deliviry app : special healthy food in algeria, connect the healthy food with resturant and women bake healthy food in hoses ",
+    "generationSummary": "## project-fe167317 - Production React Native App\n\n**App Type**: food\n**Tech Stack**: Expo SDK ~54.0.30, React Native 0.81.5\n\n### Implemented Screens\n- `app/index.tsx` — Splash: full-bleed appetising photo, stacked uppercase headline, language selection (AR/FR/EN), auto-routes after init\n- `app/(auth)/login.tsx` — Phone (+213) login with SMS OTP step, guest browsing\n- `app/(auth)/signup.tsx` — Account creation with full name, phone, wilaya picker (bottom sheet)\n- `app/(tabs)/index.tsx` — Home: location header + search pill, parallax photo hero w/ CTA, goal chip row, kitchen-type toggle, popular dish rail, kitchen cards, trust strip\n- `app/(tabs)/cart.tsx` — Cart grouped by kitchen, steppers, promo code, fee breakdown, delivery address + slot + payment selection, checkout\n- `app/(tabs)/orders.tsx` — Active/Past orders, track + reorder\n- `app/(tabs)/profile.tsx` — Account, dietary profile, addresses, partner entry, settings, language, logout\n- `app/kitchen/[id].tsx` — Kitchen detail: cover photo, verification badges, weekly menu, dish list, dish sheet with nutrition + customizations\n- `app/order/[id].tsx` — Live tracking: MapView with kitchen/courier/dropoff markers, ETA, status timeline\n\n### Key Files & Responsibilities\n- `types/index.ts` — Flat DB-style models (User, Address, Kitchen, Dish, Order, Courier, Review, MealPlan…)\n- `constants/Colors.ts` — Archetype palette (light/dark)\n- `constants/i18n.ts` — Tiny translation table + RTL flag (ar/fr/en)\n- `services/mockData.ts` — Kitchens, dishes, goals, wilayas, orders\n- `store/useAuthStore.ts` — Auth store with separate `isInitializing` / `isSubmitting`\n- `store/useStore.ts` — Cart, orders, favorites, language, simulated live order updates (all async actions)\n- `components/ui/*` — Button, Card, Input, Badge, Skeleton, EmptyState, BottomSheet, PressableScale\n- `components/motion/ParallaxHeader.tsx` — Scroll-linked parallax hero + `useScrollY`, `FadeInView`\n- `components/shared/*` — CategoryRow, KitchenCard, DishCard, PriceAddButton, TrustChips, RewardsStrip, NutritionPanel, StatusIndicator, LocationPicker, CartBadge\n- `app/_layout.tsx` — Root providers + auth guard (splash gated on `isInitializing` only)\n- `app/(tabs)/_layout.tsx` — Custom docked tab bar with raised center cart action + badge\n\n### Design Tokens Applied\n- Theme: Photo Marketplace (archetype: photo-marketplace)\n- Structure: location-search header → photo hero w/ CTA → category row → popular rail → trust strip → docked tabs w/ raised cart\n- Colors: primary #c2410c, secondary #fde8d7, accent #dc2626, canvas #f7f1e8, text #1c1917\n- Typography: display `text-3xl font-extrabold uppercase`, heading `text-lg font-bold`, body `text-sm`, label `text-xs font-medium`\n- Spacing/Radius: 20pt card radius, `shadow-sm`, no borders, 20pt page padding\n\n### Important Patterns & Conventions\n- State: Zustand; all data access via async store actions with try/catch\n- Navigation: Expo Router, only routes that exist\n- Styling: NativeWind classes + a few inline styles for dynamic values\n- Motion: built-in Animated + LayoutAnimation only (no reanimated)\n- IDs: `expo-crypto` `randomUUID()`\n\n### Implemented Features\n- Language select (AR RTL flag / FR / EN), OTP login, guest mode, signup with wilaya\n- Goal chips, kitchen-type toggle, search, favorites, hygiene/halal badges\n- Dish nutrition panel, customizations, multi-kitchen cart, promo (SAHA10), COD / CIB / BaridiMob\n- Delivery slot selection, order placement, live-simulated order tracking with map\n- Orders history with reorder, empty/loading states, pull-to-refresh\n\n### How to Run\n```bash\ncd project-fe167317\nnpm install\nnpx expo start\n```"
+  }
+}
