@@ -10,9 +10,9 @@
   "files": {
     "app.json": {
       "description": "json file",
-      "hash": "ffddf229c56c32ebe3f24fbb86de7b5bb03fa636",
+      "hash": "d3d9b8f39743f2da9d754fb517e06ae66ca2fd67",
       "describedHash": "3f29b1824fdd962798b44a41ae3d8d6da2b1499d",
-      "analyzedHash": "ffddf229c56c32ebe3f24fbb86de7b5bb03fa636",
+      "analyzedHash": "d3d9b8f39743f2da9d754fb517e06ae66ca2fd67",
       "source": "static",
       "exports": [],
       "imports": [],
@@ -927,7 +927,13 @@
     }
   },
   "decisions": [],
-  "knownIssues": [],
+  "knownIssues": [
+    {
+      "text": "package.json still pins SDK 54 packages; run `npx expo install expo@^57.0.0 --fix` to align them.",
+      "timestamp": "2026-10-11T16:25:44.646Z",
+      "resolved": false
+    }
+  ],
   "designTokens": {
     "theme": "Photo Marketplace",
     "style": "photo-marketplace",
@@ -1012,15 +1018,57 @@
     {
       "summary": "Fix this runtime error:\n[container] runtime: ERROR  Project is incompatible with… → 1 files written, 3 reasoning rounds",
       "timestamp": "2026-10-11T16:22:51.382Z"
+    },
+    {
+      "summary": "Set app.json sdkVersion to 57.0.0 per user request. Did not change package.json versions because exact SDK 57 package versions are unknown.",
+      "timestamp": "2026-10-11T16:25:44.646Z"
+    },
+    {
+      "summary": "upgrade expo go sdk from 54 to 57.0.0 → 1 files written, 3 reasoning rounds",
+      "timestamp": "2026-10-11T16:25:48.528Z"
     }
   ],
-  "turns": [],
+  "turns": [
+    {
+      "id": "t_mv417fr1ifyb",
+      "request": "Fix this runtime error:\n[container] runtime: ERROR  Project is incompatible with this version of Expo Go",
+      "intent": "bug_fix",
+      "area": "other",
+      "mode": "agentic",
+      "outcome": "unknown",
+      "failureNote": null,
+      "targets": [
+        {
+          "file": "app.json",
+          "route": null,
+          "elementId": null,
+          "label": "This is the Expo configuration file where the app's SDK-related settings live. It should be aligned with the Expo SDK version that the installed Expo Go supports.",
+          "why": "This is the Expo configuration file where the app's SDK-related settings live. It should be aligned with the Expo SDK version that the installed Expo Go supports."
+        }
+      ],
+      "filesWritten": [
+        "app.json"
+      ],
+      "autoFixedFiles": [],
+      "outOfScopeFiles": [],
+      "build": null,
+      "deployUrl": "exp://54.160.62.255:8081",
+      "checkpoints": {
+        "before": "94ba62605b2c5d7adffc05f04f4ddc0ee4db620c",
+        "afterEdit": "08b33cf459f2a551a5d02e0b97574b2052a09b0e",
+        "afterBuild": "08b33cf459f2a551a5d02e0b97574b2052a09b0e"
+      },
+      "undoneTurnId": null,
+      "undone": false,
+      "timestamp": "2026-10-11T16:23:10.381Z"
+    }
+  ],
   "preferences": [],
   "pendingClarification": null,
   "clarifications": [],
   "metadata": {
     "createdAt": "2026-10-11T16:20:05.145Z",
-    "lastUpdated": "2026-10-11T16:22:51.407Z",
+    "lastUpdated": "2026-10-11T16:25:48.549Z",
     "projectName": "project-fe167317",
     "platform": "react-native",
     "originalPrompt": "create a food deliviry app : special healthy food in algeria, connect the healthy food with resturant and women bake healthy food in hoses ",
